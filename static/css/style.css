@@ -64,10 +64,8 @@ li {
 }
 
 .header__logo {
-  cursor: pointer;
   width: 120px;
   height: 120px;
-  transform: rotate(-11deg);
 } 
 .text-logo{
   color: white;
@@ -387,7 +385,7 @@ font-size: 15px;
 }
 .footer__row-first{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .first{
@@ -517,7 +515,6 @@ font-size: 15px;
     cursor: pointer;
     width: 80px;
     height: 80px;
-    transform: rotate(-11deg);
   } 
   .text-logo{
     font-size: 20px;;
@@ -617,7 +614,6 @@ font-size: 15px;
   cursor: pointer;
   width: 120px;
   height: 120px;
-  transform: rotate(-11deg);
 } 
 .text-logo{
   color: white;
@@ -777,7 +773,6 @@ font-size: 15px;
     cursor: pointer;
     width: 120px;
     height: 120px;
-    transform: rotate(-11deg);
   } 
   .text-logo{
     color: white;
@@ -934,9 +929,15 @@ font-size: 15px;
     height: 370px;
   }
 
+  .wrapper-body{
+    max-width: 1350px;
+    min-width: 1347px;
+  }
   body{
-    max-width: 1330px;
-    text-align: center;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
+

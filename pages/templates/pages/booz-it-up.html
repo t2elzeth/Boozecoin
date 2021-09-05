@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/static/css/mobile.css">
 </head>
 <body>
+    <div class="wrapper-body">
     <div class="desktop">
         <header class="desktop-header">
             <a href="{% url 'homepage' %}"><div class="logo">
@@ -16,7 +17,7 @@
                 <h2 class="text-logo">BOOZECOIN</h2>
             </div></a>
             <div class="header-links">
-                <a class="header-link active" href="{% url 'booz-it-up' %}">Booz it up</a>
+                <a class="header-link active" href="">Booz it up</a>
                 <a class="header-link" href="{% url 'what-is-boozecoin' %}">What is Boozecoin?</a>
                 <a class="header-link" href="{% url 'guide' %}">Guide</a>
                 <a class="header-link" href="{% url 'faq' %}">FAQ</a>
@@ -27,8 +28,8 @@
                 <div class="main-content__wrapper">
                     <h1 class="title-text">Booz it up</h1>
                     <img class="main-line" src="/static/img/line-main.png" alt="">
-                    <p class="main-text">
-                       {{ content.booz_it_up }}
+                    <p class="main-text" style="margin-top: 10px;">
+                            {{ content.booz_it_up }}
                     </p>
                 </div>
             </div>
@@ -38,11 +39,10 @@
         </main>
         <footer class="desktop-footer">
             <div class="footer__row-first">
-                <img class="footer-cosmonaut" src="/static/img/cosmonaut-footer.png" alt="">
                 <div class="footer-links">
                     <div class="footer-card">
                         <h4 class="footer-title">About</h4>
-                        <a class="footer-link" href="#">The team</a>
+                        <a class="footer-link" href="{% url 'about' %}">The team</a>
                     </div>
                     <div class="footer-card">
                         <h4 class="footer-title">Follow Us</h4>
@@ -63,9 +63,9 @@
             <div class="footer__row-second">
                 <h5 class="copyright">© All rights reserved</h5>
                 <div class="footer-icons">
-                    <a href="#"><img class="footer-icon" src="/static/img/ic1.svg" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/telega-desk.png" alt=""></a>
                     <a href="#"><img class="footer-icon" src="/static/img/ic2.svg" alt=""></a>
-                    <a href="#"><img class="footer-icon" src="/static/img/ic3.svg" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/twiiter-desk.png" alt=""></a>
                     <a href="#"><img class="footer-icon" src="/static/img/ic4.svg" alt=""></a>
                 </div>
             </div>
@@ -201,36 +201,40 @@
                     </p>
                 </div>
             </section>
-            <footer class="footer-mobile">
-                <div class="footer-row__mobile">
-                    <div class="card-footer__mobile">
-                        <h3 class="title-footer__mobile">About</h3>
-                        <div class="footer-links__mobile">
-                            <a href="" class="footer-link__mobile">The team</a>
+            <footer class="desktop-footer">
+                <div class="footer__row-first">
+                    <div class="footer-links">
+                        <div class="footer-card">
+                            <h4 class="footer-title">About</h4>
+                            <a class="footer-link" href="{% url 'about' %}">The team</a>
                         </div>
-                    </div>
-                    <div class="card-footer__mobile">
-                        <h3 class="title-footer__mobile">Follow Us</h3>
-                        <div class="footer-links__mobile">
-                            <a href="" class="footer-link__mobile">Twitter</a>
-                            <a href="" class="footer-link__mobile">Facebook</a>
+                        <div class="footer-card">
+                            <h4 class="footer-title">Follow Us</h4>
+                            <div class="row-footer-link">
+                                <a class="footer-link first" href="#">Twitter</a>
+                                <a class="footer-link" href="#">facebook</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-footer__mobile">
-                        <h3 class="title-footer__mobile">Get the app</h3>
-                        <div class="footer-links__mobile">
-                            <a href="" class="footer-link__mobile">Android</a>
-                            <a href="" class="footer-link__mobile">IOS</a>
+                        <div class="footer-card">
+                            <h4 class="footer-title">Get the up</h4>
+                            <div class="row-footer-link">
+                                <a class="footer-link first" href="#">Android</a>
+                                <a class="footer-link" href="#">IOS</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-icons__mobile">
-                    <a href="#"><img src="/static/img/twiiter-footer-m1.png" alt="" class="footer-icon__mobile"></a>
-                    <a href="#"><img src="/static/img/twiiter-footer-m2.png" alt="" class="footer-icon__mobile"></a>
-                    <a href="#"><img src="/static/img/twiiter-footer-m3.png" alt="" class="footer-icon__mobile"></a>
-                    <a href="#"><img src="/static/img/twiiter-footer-m4.png" alt="" class="footer-icon__mobile"></a>
+                <div class="footer__row-second">
+                    <h5 class="copyright">© All rights reserved</h5>
+                    <div class="footer-icons">
+                        <a href="#"><img class="footer-icon" src="/static/img/telega-desk.png" alt=""></a>
+                        <a href="#"><img class="footer-icon" src="/static/img/ic2.svg" alt=""></a>
+                        <a href="#"><img class="footer-icon" src="/static/img/twiiter-desk.png" alt=""></a>
+                        <a href="#"><img class="footer-icon" src="/static/img/ic4.svg" alt=""></a>
+                    </div>
                 </div>
             </footer>
+        </div>
         </div>
 </body>
 

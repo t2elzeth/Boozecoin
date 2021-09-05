@@ -30,3 +30,8 @@ class BoozItUpView(View):
 class WhatIsBoozecoinView(View):
     def get(self, request):
         return render(request, 'pages/what-is-Boozecoin.html')
+
+
+class AboutView(View):
+    def get(self, request):
+        return render(request, 'pages/about.html')

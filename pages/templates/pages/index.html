@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/static/css/mobile.css">
 </head>
 <body>
+    <div class="wrapper-body">
     <div class="desktop">
         <div class="background-line">
         <header class="desctop-header">
@@ -19,7 +20,7 @@
                 </ul>
                 <a href="#">
                     <div class="header__title">
-                        <img src="/static/img/header-logo.png" alt="logo" class="header__logo">
+                        <img src="/static/img/black-dog.png" alt="logo" class="header__logo">
                         <h3 class="text-logo">BOOZECOIN</h3>
                     </div>
                 </a>
@@ -56,10 +57,10 @@
                                 <img src="/static/img/background.png" alt="" class="background">
                             </div>
                         <div class="aside">
-                            <a href="#"><img class="aside__items" src="/static/img/twitter.svg" alt="social-items"></a>
-                            <a href="#"><img class="aside__items" src="/static/img/telegram.svg" alt="social-items" class="facebook"></a>
-                            <a href="#"><img class="aside__items" src="/static/img/social.svg" alt="social-items"></a>
-                            <a href="#"><img class="aside__items" src="/static/img/whatsapp.svg" alt="social-items"></a>
+                            <a href="#"><img class="aside__items" src="/static/img/insta-aside.png" alt="social-items"></a>
+                            <a href="#"><img class="aside__items" src="/static/img/telega-aside.png" alt="social-items"></a>
+                            <a href="#"><img class="aside__items" src="/static/img/reddit-aside.png" alt="social-items"></a>
+                            <a href="#"><img class="aside__items" src="/static/img/twiiter-aside.png" alt="social-items"></a>
                         </div>
                         </div>
                     </div>
@@ -76,11 +77,10 @@
         </div>
         <footer class="desktop-footer">
             <div class="footer__row-first">
-
                 <div class="footer-links">
                     <div class="footer-card">
                         <h4 class="footer-title">About</h4>
-                        <a class="footer-link" href="#">The team</a>
+                        <a class="footer-link" href="{% url 'about' %}">The team</a>
                     </div>
                     <div class="footer-card">
                         <h4 class="footer-title">Follow Us</h4>
@@ -101,9 +101,9 @@
             <div class="footer__row-second">
                 <h5 class="copyright">© All rights reserved</h5>
                 <div class="footer-icons">
-                    <a href="#"><img class="footer-icon" src="/static/img/ic1.svg" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/telega-desk.png" alt=""></a>
                     <a href="#"><img class="footer-icon" src="/static/img/ic2.svg" alt=""></a>
-                    <a href="#"><img class="footer-icon" src="/static/img/ic3.svg" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/twiiter-desk.png" alt=""></a>
                     <a href="#"><img class="footer-icon" src="/static/img/ic4.svg" alt=""></a>
                 </div>
             </div>
@@ -145,7 +145,7 @@
               </nav>
             <h2 class="header-text__mobile">BOOZECOIN</h2>
             <div class="wrapper-header-logo_mobile">
-                <img class="header-logo__mobile" src="/static/img/background.png" alt="">
+                <img class="header-logo__mobile" src="/static/img/black-dog.png" alt="">
             </div>
         </header>
         <main class="main-mobile">
@@ -155,7 +155,7 @@
                 <h2 class="main-title-text_mobile">Buy and invest in your booze.</h2>
                 </div>
                 <div class="wrapper-icon-main_mobile">
-                <img class="main-icon_mobile" src="/static/img/background.png" alt="">
+                <img class="main-icon_mobile" src="/static/img/black-dog.png" alt="">
                 </div>
             </div>
             <p class="main-text_mobile">Peer-to-peer digital currency to buy booze around the world</p>
@@ -163,6 +163,68 @@
         </main>
         <section class="section-text_mobile">
             <div style="width: 85%;">
+            <h2 class="title-section__mobile">HOW TO GET BZC</h2>
+            
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">1. CREATE A WALLET</h3>
+                <p class="description-mobile">Download and Install <a class="metamask" href="https://metamask.io/">Metamask</a>. Follow the instructions for installation</p>
+            </div>
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">2. CONFIGURE NETWORK</h3>
+                <ol class="ol-mobile">
+                    <li class="li-mobile">Open Metamask wallet</li>
+                    <li class="li-mobile">Switch to "Smart Chain" network</li>
+                    <li class="li-mobile">Go to settings and tap "Networks"</li>
+                    <li class="li-mobile">Tap "Add Network" and type as follow:</li>
+                </ol>
+            </div>
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">Network Name</h3>
+                <p class="description-mobile">Smart Chain</p>
+            </div>
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">RPC Url</h3>
+                <p class="description-mobile">https://bsc-dataseed.binance.org</p>
+            </div>
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">Chain ID</h3>
+                <p class="description-mobile">56</p>
+            </div>
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">Symbol</h3>
+                <p class="description-mobile">BNB</p>
+            </div>
+            
+            <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+            
+            <div class="wrapper-back-mobile">
+                <img class="back-1-mobile" src="/static/img/back1.webp" alt="">
+            </div>
+
+            <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">4. SWAP FOR BZC</h3>
+                <ol class="ol-mobile">
+                    <li class="li-mobile">You will need BNB or other coins supported by "Metamask" in your wallet to swap it for "BZC". Buy BNB</li>
+                    <li class="li-mobile">At main menu (Metamask) tap "Swap"</li>
+                    <li class="li-mobile">Enter BNB amount to swap for "BZC"</li>
+                    <li class="li-mobile">Click "Get Quotes"</li>
+                    <li class="li-mobile">Slide to "Confirm</li>
+                </ol>
+            </div>
+            <div class="list-mobile">
+                <h3 class="title-list-mobile">5. "BZC" WILL APPEAR IN YOUR METAMASK WALLET</h3>
+                <a class="buy-mobile" href="#">buy</a>
+            </div>
+
+            <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+            
+            <div class="wrapper-back-mobile">
+                <img class="back-2-mobile" src="/static/img/back1.webp" alt="">
+            </div>
+
+            <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+                                                                          
             <h2 class="title-section__mobile">BOOZ IT UP</h2>
 
             <p class="text-section__mobile">
@@ -194,6 +256,13 @@
             <p class="text-section__mobile">
                 But BZC is not just another coin to pay, you can invest in in your booze for the future! The emission of our token is 10 billion, and the initial cost of BZC is very low with the prospect of growth as its popularity grows.
             </p>
+            <img class="section-small-line__mobile" src="/static/img/line__mobile.png" alt="">
+
+            <h2 class="title-section__mobile">About</h2>
+            <p class="text-section__mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae porta nisl nisl in in amet scelerisque scelerisque. Mauris aliquet integer lobortis integer. Mauris, at in sed adipiscing lorem nulla congue dui gravida. Id elit, ac semper id purus. Felis risus aliquet ac senectus risus tortor mattis laoreet.
+                Ullamcorper pretium eros amet a, mauris ultrices et. Sed non a dignissim ac nunc aliquam quam orci commodo. Massa magna ut leo euismod eu lorem. Et auctor turpis nec id. Pharetra non et sapien feugiat scelerisque. Suscipit sed quis turpis pellentesque gravida mauris. Sociis sed a vitae gravida. Pellentesque faucibus nisi faucibus tristique tincidunt morbi mauris malesuada. Non pretium eros aenean pellentesque urna velit consectetur etiam. Sed facilisi duis erat vulputate. Consequat nunc consequat quis blandit turpis ut morbi tellus sagittis. Sed eget elementum interdum at dolor pellentesque augue nisl. Amet, vitae, vel id vulputate. Sagittis semper magna ante scelerisque pellentesque sed tortor. Bibendum quam varius risus rutrum sit.
+                Enim aliquet non erat auctor purus. Et enim dui mus fames a quis elementum maecenas. Laoreet quis purus urna diam ut morbi risus ac.</p>
+
             <img class="section-small-line__mobile" src="/static/img/line__mobile.png" alt="">
             </div>
         </section>
@@ -269,6 +338,7 @@
                 <a href="#"><img src="/static/img/twiiter-footer-m4.png" alt="" class="footer-icon__mobile"></a>
             </div>
         </footer>
+    </div>
     </div>
 </body>
 </html>

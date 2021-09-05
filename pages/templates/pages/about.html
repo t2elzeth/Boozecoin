@@ -19,17 +19,17 @@
         <div class="header-links">
             <a class="header-link" href="{% url 'booz-it-up' %}">Booz it up</a>
             <a class="header-link" href="{% url 'what-is-boozecoin' %}">What is Boozecoin?</a>
-            <a class="header-link active" href="">Guide</a>
+            <a class="header-link" href="{% url 'guide' %}">Guide</a>
             <a class="header-link" href="{% url 'faq' %}">FAQ</a>
         </div>
     </header>
     <main class="desktop-main">
         <div class="main-content">
             <div class="main-content__wrapper">
-                <h1 class="title-text">Guide</h1>
+                <h1 class="title-text">About</h1>
                 <img class="main-line" src="/static/img/line-main.png" alt="">
                 <p class="main-text" style="margin-top: 10px;">
-                    {{ content.guide }}
+                    {{ content.about }}
                 </p>
             </div>
         </div>
@@ -231,6 +231,6 @@
             </div>
         </footer>
     </div>
-</div>
+    </div>
 </body>
 </html>

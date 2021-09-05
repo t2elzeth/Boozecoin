@@ -6,6 +6,7 @@
 body{
     background: #2A0808;
     font-family: "Roboto", sans-serif;
+    text-align: left;
 }
 a{
     text-decoration: none;
@@ -126,7 +127,7 @@ li{
   }
   .footer__row-first{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
   .first{
@@ -167,4 +168,14 @@ li{
   .footer-icon{
     width: 40px;
     height: 40px;
+  }
+  .wrapper-body{
+    max-width: 1347px;
+    width: 100%;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
   }
