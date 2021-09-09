@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    container_name: ${PROJECT_NAME}Web
+    volumes:
+      - ./:/app
+      - staticfiles:/app/staticfiles
+      - mediafiles:/app/media
+    environment:
+      DJANGO_ADMIN_USERNAME: boozeadmin
+      DJANGO_ADMIN_PASSWORD: 147852zxc
+      DJANGO_SETTINGS_FOLDER: core
+
+  nginx:
+    image: nginx
+    container_name: ${PROJECT_NAME}Nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.prod.conf.template:/etc/nginx/templates/default.conf.template
+      - staticfiles:/app/static
+      - mediafiles:/app/media
+      - /etc/letsencrypt:/etc/letsencrypt
+    depends_on:
+      - web
+    environment:
+      DOMAIN: boozecoin.org
+
+
+volumes:
+  staticfiles:
+    name: ${PROJECT_NAME}Staticfiles
+
+  mediafiles:
+    name: ${PROJECT_NAME}Mediafiles

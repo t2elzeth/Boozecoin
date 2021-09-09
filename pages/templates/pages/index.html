@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boozecoin</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/mobile.css">
+</head>
+<body>
+<div class="wrapper-body">
+    <div class="desktop">
+        <div class="background-line">
+            <header class="desctop-header">
+                <nav class="header__nav">
+                    <ul class="header__first-btns">
+                        <li class="booz-it-up"><a class="header__link" href="{% url 'booz-it-up' %}">Booz it up</a></li>
+                        <li><a class="header__link" href="{% url 'what-is-boozecoin' %}">What is Boozecoin?</a></li>
+                    </ul>
+                    <a href="#">
+                        <div class="header__title">
+                            <img src="/static/img/black-dog.png" alt="logo" class="header__logo">
+                            <h3 class="text-logo">BOOZECOIN</h3>
+                        </div>
+                    </a>
+                    <ul class="header__last-btns">
+                        <li><a class="header__link" href="{% url 'guide' %}">Guide</a></li>
+                        <li><a class="header__link" href="{% url 'faq' %}">FAQ</a></li>
+                        <li><a class="header__btn-border" href="#">Subscribe</a></li>
+                        <li><a class="header__btn-border" href="{% url 'get-booze' %}">Get Booze</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="desktop-main">
+                <div class="wrapper-main">
+                    <div class="wrapper-img-text">
+                        <div class="main-content">
+                            <div class="wrapper-text">
+                                <div class="main__title">
+                                    <h1 class="title-text">Buy and invest</h1>
+                                    <h1 class="title-text">in your booze.</h1>
+                                </div>
+                                <div class="main__subtitle">
+                                    <h2 class="subtitle-text">Peer-to-peer digital currency to</h2>
+                                    <h2 class="subtitle-text">buy booze around the world</h2>
+                                </div>
+                                <div class="main__wrapper">
+                                    <button class="main__button">Partner bars</button>
+                                    <button class="main__button">Interactive map</button>
+                                    <button class="main__button">Register your wallet</button>
+                                    <button class="main__button">Register your bar</button>
+                                </div>
+                            </div>
+                            <div class="wrapper-img-main">
+                                <div class="border">
+                                    <img src="/static/img/background.png" alt="" class="background">
+                                </div>
+                                <div class="aside">
+                                    <a href="#"><img class="aside__items" src="/static/img/insta-aside.png" alt="social-items"></a>
+                                    <a href="#"><img class="aside__items" src="/static/img/telega-aside.png" alt="social-items"></a>
+                                    <a href="#"><img class="aside__items" src="/static/img/reddit-aside.png" alt="social-items"></a>
+                                    <a href="#"><img class="aside__items" src="/static/img/twiiter-aside.png" alt="social-items"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__item">
+                    <img class="cosmonaut" src="/static/img/cosmonaut.png" alt="">
+                    <div class="main__text">Join Us to Our Jorney to the Moon with Booze</div>
+                </div>
+            </main>
+            <div class="line line-height"></div>
+            <div class="delimiter"></div>
+        </div>
+        <footer class="desktop-footer">
+            <div class="footer__row-first">
+                <div class="footer-links">
+                    <div class="footer-card">
+                        <h4 class="footer-title">About</h4>
+                        <a class="footer-link" href="{% url 'about' %}">The team</a>
+                    </div>
+                    <div class="footer-card">
+                        <h4 class="footer-title">Follow Us</h4>
+                        <div class="row-footer-link">
+                            <a class="footer-link first" href="#">Twitter</a>
+                            <a class="footer-link" href="#">facebook</a>
+                        </div>
+                    </div>
+                    <div class="footer-card">
+                        <h4 class="footer-title">Get the up</h4>
+                        <div class="row-footer-link">
+                            <a class="footer-link first" href="#">Android</a>
+                            <a class="footer-link" href="#">IOS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row-second">
+                <h5 class="copyright">© All rights reserved</h5>
+                <div class="footer-icons">
+                    <a href="#"><img class="footer-icon" src="/static/img/telega-desk.png" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/ic2.svg" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/twiiter-desk.png" alt=""></a>
+                    <a href="#"><img class="footer-icon" src="/static/img/ic4.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- MOBILE SITE  -->
+    <div class="mobile">
+        <header class="mobile-header">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+
+                    <!--
+                    Some spans to act as a hamburger.
+
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                        <a href="#"><li>Partner bars</li></a>
+                        <a href="#"><li>Interactive map</li></a>
+                        <a href="#"><li>Register your wallet</li></a>
+                        <a href="#"><li>Register your bar</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <h2 class="header-text__mobile">BOOZECOIN</h2>
+            <div class="wrapper-header-logo_mobile">
+                <img class="header-logo__mobile" src="/static/img/black-dog.png" alt="">
+            </div>
+        </header>
+        <main class="main-mobile">
+            <div>
+                <div style="display: flex; height: 86px;">
+                    <div class="wrapper-title-main-text_mobile">
+                        <h2 class="main-title-text_mobile">Buy and invest in your booze.</h2>
+                    </div>
+                    <div class="wrapper-icon-main_mobile">
+                        <img class="main-icon_mobile" src="/static/img/black-dog.png" alt="">
+                    </div>
+                </div>
+                <p class="main-text_mobile">Peer-to-peer digital currency to buy booze around the world</p>
+            </div>
+        </main>
+        <section class="section-text_mobile">
+            <div style="width: 85%;">
+
+                <h2 class="title-section__mobile">WHAT IS BOOZECOIN?</h2>
+                <p class="text-section__mobile">
+                    The COVID pandemic has divided us, isolated and distanced. Many turned out to be far from their relatives, friends, and their booze fellas. The Booze Coin project is an opportunity to treat your buddy on the other side of the world by paying for his/her booze with BZC.
+                </p>
+                <p class="text-section__mobile">
+                    As part of this project, we are creating an application that allows users to check in at a bar that accepts BZC, and all her/his friends will be notified of this, which in turn will allow them to treat their friend to a drink, even if s/he is on the other side of the world, with one finger move. The bar will receive BZC payment and your personal message about who this drink is for. This is an opportunity to support your booze fellow even at a distance. BZC rate is flexible, market based, and every participating bar just indicate the cost of the booze which is automatically recalculates to BZC by the current market rate.
+                </p>
+                <p class="text-section__mobile">
+                    But BZC is not just another coin to pay, you can invest in in your booze for the future! The emission of our token is 10 billion, and the initial cost of BZC is very low with the prospect of growth as its popularity grows.
+                </p>
+                <img class="section-small-line__mobile" src="/static/img/line__mobile.png" alt="">
+                <h2 class="title-section__mobile">BOOZ IT UP</h2>
+
+                <p class="text-section__mobile">
+                    Market size of the bars and nightclubs in the US only is estimated by USD 22.33 bln.  and is projected to reach USD 38.09 Billion by 2028.
+                </p>
+                <p class="text-section__mobile">
+                    BZC is a project to create first ever decentralized global chain of bars. All partnering bars save their unique identity and at the same time united in one chain of bars that accept BZC what makes them listed in our BZC App map and all our promoting materials! BZC team provide full technical support for the use of BZC, from installation to cash out. Our timeline is based on several main stages: Launched BZC and the website late August 2021
+                </p>
+                <p class="text-section__mobile">
+                    BZC listed at the several swap services, starting with https://pancakeswap.finance/ - September 5th 2021
+                </p>
+                <p class="text-section__mobile">
+                    BZC is available for MetaMask swap – Early October 2021
+                </p>
+                <p class="text-section__mobile">
+                    BZC app developed and launched – late October 2021
+                </p>
+                <p class="text-section__mobile">
+                    BZC bar chain reach 100 partners - March 2022
+                </p>
+                <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+
+                <h2 class="title-section__mobile">HOW TO GET BZC</h2>
+
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">1. CREATE A WALLET</h3>
+                    <p class="description-mobile">Download and Install <a class="metamask" href="https://metamask.io/">Metamask</a>. Follow the instructions for installation</p>
+                </div>
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">2. CONFIGURE NETWORK</h3>
+                    <ol class="ol-mobile">
+                        <li class="li-mobile">Open Metamask wallet</li>
+                        <li class="li-mobile">Switch to "Smart Chain" network</li>
+                        <li class="li-mobile">Go to settings and tap "Networks"</li>
+                        <li class="li-mobile">Tap "Add Network" and type as follow:</li>
+                    </ol>
+                </div>
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">Network Name</h3>
+                    <p class="description-mobile">Smart Chain</p>
+                </div>
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">RPC Url</h3>
+                    <p class="description-mobile">https://bsc-dataseed.binance.org</p>
+                </div>
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">Chain ID</h3>
+                    <p class="description-mobile">56</p>
+                </div>
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">Symbol</h3>
+                    <p class="description-mobile">BNB</p>
+                </div>
+
+                <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+
+                <div class="wrapper-back-mobile">
+                    <img class="back-1-mobile" src="/static/img/back1.webp" alt="">
+                </div>
+
+                <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">4. SWAP FOR BZC</h3>
+                    <ol class="ol-mobile">
+                        <li class="li-mobile">You will need BNB or other coins supported by "Metamask" in your wallet to swap it for "BZC". Buy BNB</li>
+                        <li class="li-mobile">At main menu (Metamask) tap "Swap"</li>
+                        <li class="li-mobile">Enter BNB amount to swap for "BZC"</li>
+                        <li class="li-mobile">Click "Get Quotes"</li>
+                        <li class="li-mobile">Slide to "Confirm</li>
+                    </ol>
+                </div>
+                <div class="list-mobile">
+                    <h3 class="title-list-mobile">5. "BZC" WILL APPEAR IN YOUR METAMASK WALLET</h3>
+                    <a class="buy-mobile" href="#">buy</a>
+                </div>
+
+                <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+
+                <div class="wrapper-back-mobile">
+                    <img class="back-2-mobile" src="/static/img/back1.webp" alt="">
+                </div>
+
+                <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+                   <h2 class="title-section__mobile">GUIDE</h2>
+                <p class="text-section__mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae porta nisl nisl in in amet scelerisque scelerisque. Mauris aliquet integer lobortis integer. Mauris, at in sed adipiscing lorem nulla congue dui gravida. Id elit, ac semper id purus. Felis risus aliquet ac senectus risus tortor mattis laoreet. Ullamcorper pretium eros amet a, mauris ultrices et. Sed non a dignissim ac nunc aliquam quam orci commodo. Massa magna ut leo euismod eu lorem. Et auctor turpis nec id. Pharetra non et sapien feugiat scelerisque. Suscipit sed quis turpis pellentesque gravida mauris. Sociis sed a vitae gravida. Pellentesque faucibus nisi faucibus tristique tincidunt morbi mauris malesuada. Non pretium eros aenean pellentesque urna velit consectetur etiam. Sed facilisi duis erat vulputate. Consequat nunc consequat quis blandit turpis ut morbi tellus sagittis. Sed eget elementum interdum at dolor pellentesque augue nisl. Amet, vitae, vel id vulputate. Sagittis semper magna ante scelerisque pellentesque sed tortor. Bibendum quam varius risus rutrum sit. Enim aliquet non erat auctor purus. Et enim dui mus fames a quis elementum maecenas. Laoreet quis purus urna diam ut morbi risus ac.
+                </p>
+<!--                <h2 class="title-section__mobile">About</h2>-->
+<!--                <p class="text-section__mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae porta nisl nisl in in amet scelerisque scelerisque. Mauris aliquet integer lobortis integer. Mauris, at in sed adipiscing lorem nulla congue dui gravida. Id elit, ac semper id purus. Felis risus aliquet ac senectus risus tortor mattis laoreet.-->
+<!--                    Ullamcorper pretium eros amet a, mauris ultrices et. Sed non a dignissim ac nunc aliquam quam orci commodo. Massa magna ut leo euismod eu lorem. Et auctor turpis nec id. Pharetra non et sapien feugiat scelerisque. Suscipit sed quis turpis pellentesque gravida mauris. Sociis sed a vitae gravida. Pellentesque faucibus nisi faucibus tristique tincidunt morbi mauris malesuada. Non pretium eros aenean pellentesque urna velit consectetur etiam. Sed facilisi duis erat vulputate. Consequat nunc consequat quis blandit turpis ut morbi tellus sagittis. Sed eget elementum interdum at dolor pellentesque augue nisl. Amet, vitae, vel id vulputate. Sagittis semper magna ante scelerisque pellentesque sed tortor. Bibendum quam varius risus rutrum sit.-->
+<!--                    Enim aliquet non erat auctor purus. Et enim dui mus fames a quis elementum maecenas. Laoreet quis purus urna diam ut morbi risus ac.</p>-->
+
+<!--                <img class="section-small-line__mobile" src="/static/img/line__mobile.png" alt="">-->
+            </div>
+        </section>
+<!--         <section class="section-social__mobile">-->
+<!--            <h2  class="title-section__mobile">YOU CAN FIND US HERE</h2>-->
+<!--            <div class="wrapper-cards-section__mobile">-->
+<!--                <div class="section-card">-->
+<!--                    <img class="social-item__mobile-1" src="/static/img/ic-social-mobile1.png" alt="">-->
+<!--                    <h3 class="title-social__mobile">Reddit</h3>-->
+<!--                </div>-->
+<!--                <div class="section-card">-->
+<!--                    <img class="social-item__mobile-2" src="/static/img/ic-social-mobile2.png" alt="">-->
+<!--                    <h3 class="title-social__mobile">Inst</h3>-->
+<!--                </div>-->
+<!--                <div class="section-card">-->
+<!--                    <img class="social-item__mobile-3" src="/static/img/ic-social-mobile3.png" alt="">-->
+<!--                    <h3 class="title-social__mobile">Telegram</h3>-->
+<!--                </div>-->
+<!--                <div class="section-card">-->
+<!--                    <img class="social-item__mobile-4" src="/static/img/ic-social-mobile4.png" alt="">-->
+<!--                    <h3 class="title-social__mobile">Twitter</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>
+        </section>-->
+        <section class="section-text_mobile" style="margin-bottom: 5%;">
+            <div style="width: 85%;">
+                <img class="line-section__mobile" src="/static/img/LINE-MOBILE.png" alt="">
+             
+            </div>
+        </section>
+        <footer class="footer-mobile">
+            <div class="footer-row__mobile">
+                <div class="card-footer__mobile">
+                    <h3 class="title-footer__mobile">About</h3>
+                    <div class="footer-links__mobile">
+                        <a href="" class="footer-link__mobile">The team</a>
+                    </div>
+                </div>
+                <div class="card-footer__mobile">
+                    <h3 class="title-footer__mobile">Follow Us</h3>
+                    <div class="footer-links__mobile">
+                        <a href="" class="footer-link__mobile">Twitter</a>
+                        <a href="" class="footer-link__mobile">Facebook</a>
+                    </div>
+                </div>
+                <div class="card-footer__mobile">
+                    <h3 class="title-footer__mobile">Get the app</h3>
+                    <div class="footer-links__mobile">
+                        <a href="" class="footer-link__mobile">Android</a>
+                        <a href="" class="footer-link__mobile">IOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-icons__mobile">
+                <a href="#"><img src="/static/img/twiiter-footer-m1.png" alt="" class="footer-icon__mobile"></a>
+                <a href="#"><img src="/static/img/twiiter-footer-m2.png" alt="" class="footer-icon__mobile"></a>
+                <a href="#"><img src="/static/img/twiiter-footer-m3.png" alt="" class="footer-icon__mobile"></a>
+                <a href="#"><img src="/static/img/twiiter-footer-m4.png" alt="" class="footer-icon__mobile"></a>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
