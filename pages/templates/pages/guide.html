@@ -7,6 +7,7 @@
     <title>Boozecoin</title>
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/mobile.css">
+
 </head>
 <body>
     <div class="wrapper-body">
@@ -29,7 +30,7 @@
                 <h1 class="title-text">Guide</h1>
                 <img class="main-line" src="/static/img/line-main.png" alt="">
                 <p class="main-text" style="margin-top: 10px;">
-                    {{ content.guide }}
+                    {{ content.guide|safe }}
                 </p>
             </div>
         </div>
